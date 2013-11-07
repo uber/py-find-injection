@@ -8,6 +8,7 @@ setup(
     author_email="jbrown@uber.com",
     url="http://github.com/uber/py_find_injection",
     description="simple python ast consumer which searches for common SQL injection attacks",
+    license='MIT (Expat)',
     classifiers=[
         "Programming Language :: Python",
         "Operating System :: OS Independent",
