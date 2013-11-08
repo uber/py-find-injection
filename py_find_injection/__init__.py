@@ -4,6 +4,9 @@ import argparse
 import ast
 import sys
 
+version_info = (0, 1, 1)
+__version__ = '.'.join(map(str, version_info))
+
 
 def stringify(node):
     if isinstance(node, ast.Name):
@@ -118,6 +121,7 @@ def main():
         description='Look for patterns in python source files that might indicate SQL injection vulnerabilities',
         epilog='Exit status is 0 if all files are okay, 1 if any files have an error. Errors are printed to stdout'
     )
+    parser.add_argument('--version', action='version', version='%(prog)s ' + __version__)
     parser.add_argument('files', nargs='+', help='Files to check')
     args = parser.parse_args()
 

@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name="py_find_injection",
-    version="0.1",
+    name="py-find-injection",
+    version="0.1.1",
     author="James Brown",
     author_email="jbrown@uber.com",
-    url="http://github.com/uber/py_find_injection",
+    url="https://github.com/uber/py-find-injection",
     description="simple python ast consumer which searches for common SQL injection attacks",
     license='MIT (Expat)',
     classifiers=[
